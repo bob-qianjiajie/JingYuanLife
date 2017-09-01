@@ -1,0 +1,9 @@
+<view>用户昵称：{{nickName}}</view>
+<view style="display:flex">
+  <view style="width:100px;line-height:100px;">用户头像:</view>
+  <image style="width:100px;height:100px;" src="{{userInfoAvatar}}"/>
+</view>
+<view>性别：{{sex}}</view>
+<view>所在地址（省）：{{province}}</view>
+<view>所在地址（市）：{{city}}</view>
+<text wx:for="{{stepInfoList}}">{{item.timestamp}}\n</text>

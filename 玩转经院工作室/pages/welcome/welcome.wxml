@@ -1,0 +1,10 @@
+<!--pages/welcome/welcom.wxml-->
+<view class="container">
+  <image src="{{url}}" class="bg-img" mode="aspectFill"></image>
+  <image src="{{avatarUrl}}" class="user-avatar" ></image>
+  <text class="user-name">Hi,{{nickName}}</text>
+  <button class="moto" bindtap="onTap">
+    进入经院校园
+  </button>
+  <text class="copyright">{{copyright}}</text>
+</view>

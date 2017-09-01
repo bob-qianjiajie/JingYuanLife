@@ -1,0 +1,47 @@
+<view class="container">
+  <view class="page-body">
+  <form catchsubmit="formSubmit" catchreset="formReset">
+
+      <view class="page-section">
+        <view class="weui-cells__title">学号：</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input name="department_name" class="weui-input" auto-focus placeholder="请输入部门名称"/>
+          </view>
+        </view>
+      </view>
+
+      <view class="page-section">
+        <view class="weui-cells__title">姓名：</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+             <input name="department_name" class="weui-input" placeholder="请输入部门名称"/>
+          </view>
+        </view>
+      </view>
+	
+      <view class="page-section">
+        <view class="weui-cells__title">联系人手机：</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input name="department_conacts_tel" class="weui-input" type="number" placeholder="请输入手机号" />
+          </view>
+        </view>
+      </view>
+
+      <view class="page-section">
+        <view class="weui-cells__title">邮箱：</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input name="department_conacts_qq" class="weui-input" type="number" placeholder="请输入QQ号" />
+          </view>
+        </view>
+      </view>
+
+      <view class="btn-area">
+        <button type="primary" formType="submit">提交</button>
+        <button formType="reset">重置</button>
+      </view>
+  </form>
+</view>
+</view>

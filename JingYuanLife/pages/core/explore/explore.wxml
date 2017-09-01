@@ -1,0 +1,44 @@
+<view class="blackcole">
+<view class="top-wrapper">
+	<view class="activity-wrapper">
+		<swiper indicator-dots="true" indicator-color="rgba(255, 255, 255, .5)" indicator-active-color="#ffffff">
+			<swiper-item class="card-wrapper">
+		      <view class="card-item activity" hover-class="actHover" hover-stay-time="1800">
+		        <view class="signInfo">
+		          <view style="display: flex; flex-direction:row; flex-shrink: 0; justify-content:space-between; align-items:baseline;">
+		          </view>
+		          <text style="flex-shrink: 66; font-size: 90rpx; margin-bottom: 66rpx;">经院运动场</text>
+		        </view>
+		      </view>
+		    </swiper-item>
+		</swiper>
+	</view>
+</view>
+<scroll-view class="content-wrapper" scroll-y>
+	<view class="icon-calendar today"> 30天的运动量（倒序）</view>
+
+  <block wx:for="{{[63,61,59,57,55,53,51,49,47,45,43,41,39,37,35,33,31,29,27,25,23,21,19,17,15,13,11,9,7,5,3]}}">
+  <!--kaishi-->
+	<view class="user-wrapper">
+		<view class="rank-list">
+      <view class="rank-item">
+        <view class="rank-item__left">
+          <image src="{{userInfo.avatarUrl}}" class="rank-avatar"></image>
+          <label class="rank-item__nickname">{{userInfo.nickName}}</label>
+          <label class="rank-item__step">经院运动量：<text class="font-green">{{step[item]}}</text> 步</label>
+        </view>
+        <view class="rank-item__right">
+           <label class="rank-item__number rank-item__gold">加油！</label>
+        </view>
+      </view>
+    </view>
+	</view>
+  </block>
+
+	<view class="bottom">
+	  <view class="line"></view>
+		<view class="text">就先看到这吧</view>
+		<view class="line"></view>
+	</view>
+</scroll-view>
+</view>

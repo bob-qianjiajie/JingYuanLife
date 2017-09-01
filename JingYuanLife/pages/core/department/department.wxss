@@ -1,0 +1,16 @@
+@import "../common/lib/weui.wxss";
+.picker{
+  padding: 19rpx 26rpx;
+  background-color: #FFFFFF;
+}
+textarea {
+    width: 700rpx;
+    padding: 25rpx 0;
+}
+.textarea-wrp {
+    padding: 0 25rpx;
+    background-color: #fff;
+}
+.page-section{
+  margin-bottom: 20rpx;
+}

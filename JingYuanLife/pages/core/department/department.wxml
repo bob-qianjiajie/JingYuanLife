@@ -1,0 +1,79 @@
+<view class="container">
+  <view class="page-body">
+  <form catchsubmit="formSubmit" catchreset="formReset">
+
+          <view class="page-section">
+            <view class="weui-cells__title">部门纳新范围</view>
+            <view class="weui-cells weui-cells_after-title">
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">当前选择</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <picker name="department_area" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                    <view  class="weui-input">{{array[index]}}</view>
+                  </picker>
+                </view>
+              </view>
+            </view>
+          </view>
+      <view class="page-section">
+        <view class="weui-cells__title">部门名称：</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input name="department_name" class="weui-input" auto-focus placeholder="请输入部门名称"/>
+          </view>
+        </view>
+      </view>
+      <view class="page-section">
+        <view class="weui-cells__title">部门简介：</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <textarea name="department_suggest" style="height: 3em"  placeholder="请输入部门简介" />
+          </view>
+        </view>
+      </view>
+	
+      <view class="page-section">
+        <view class="weui-cells__title">联系人姓名：</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input name="department_conacts_name" class="weui-input" placeholder="请输入姓名"/>
+          </view>
+        </view>
+      </view>
+	
+      <view class="page-section">
+        <view class="weui-cells__title">联系人手机：</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input name="department_conacts_tel" class="weui-input" type="number" placeholder="请输入手机号" />
+          </view>
+        </view>
+      </view>
+
+      <view class="page-section">
+        <view class="weui-cells__title">联系人QQ：</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input name="department_conacts_qq" class="weui-input" type="number" placeholder="请输入QQ号" />
+          </view>
+        </view>
+      </view>
+	
+      <view class="page-section">
+          <view class="weui-cells__title">部门QQ群：</view>
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <input name="department_qqqun" class="weui-input" type="number" placeholder="请输入QQ群" /> 
+            </view>
+          </view>
+      </view>
+
+      <view class="btn-area">
+        <button type="primary" formType="submit">提交</button>
+        <button formType="reset">重置</button>
+      </view>
+  </form>
+</view>
+</view>
